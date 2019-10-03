@@ -92,7 +92,7 @@ namespace LabSheet3Q1
         static void Main(string[] args)
         {
 
-            Car first = new Car("Jaguar", "XK6", 4.5, 0);
+            Car first = new Car("Jaguar", "XK6", 4.5, 30);
             Car next = new Car();
             next.Make = "Ford";
             next.Model = "Focus";
@@ -105,7 +105,7 @@ namespace LabSheet3Q1
            // Console.WriteLine("Please choose the car that you want the info on (first/next): ");
             first.DisplayCarInfo();
             first.Accelerate();
-            first.DisplayCarInfo();
+            //first.DisplayCarInfo();  //output check to see if Accelerate has worked
 
             next.Accelerate();
             next.DisplayCarInfo();
@@ -113,6 +113,11 @@ namespace LabSheet3Q1
             for (int i = 0; i < 10; i++)
             {
                 first.Accelerate();
+                if(first.CurrentSpeed>=100)   //break out of loop of car has already reached 100
+                {
+                    Console.WriteLine($"accelerator pressed {i+1} ");
+                    break;  
+                }
                 
             }
 
