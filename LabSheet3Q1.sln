@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCashRegister", "TestCas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCashRegister2", "TestCashRegister2\TestCashRegister2.csproj", "{488728B3-A406-47BC-8F77-46ABFEB93F0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchDemo", "LunchDemo\LunchDemo.csproj", "{5D0C56DF-0754-44E7-849F-0851CC62576A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{488728B3-A406-47BC-8F77-46ABFEB93F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{488728B3-A406-47BC-8F77-46ABFEB93F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{488728B3-A406-47BC-8F77-46ABFEB93F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D0C56DF-0754-44E7-849F-0851CC62576A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0C56DF-0754-44E7-849F-0851CC62576A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0C56DF-0754-44E7-849F-0851CC62576A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0C56DF-0754-44E7-849F-0851CC62576A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

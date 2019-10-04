@@ -20,7 +20,7 @@ namespace TestCashRegister
 
         public override string ToString()   
         {
-            return "Numbe of Items in basket: " + ItemCount + ". Cost = " + Total;
+            return "Number of Items in basket: " + ItemCount + ". Cost = " + Total;
         }
     }
 }
