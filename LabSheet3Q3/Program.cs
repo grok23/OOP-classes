@@ -29,7 +29,7 @@ namespace LabSheet3Q3
 
         public override string ToString()
         {
-            return $"Account Number {AccountNumber} in the name of {AccountHolder} has a balance of {Balance}";
+            return $"Account Number {AccountNumber} in the name of {AccountHolder} has a balance of {Balance}\n";
         }
 
         public void Deposit (decimal deposit)
@@ -41,8 +41,14 @@ namespace LabSheet3Q3
         {
             Balance = Balance - takeout;
         }
-    }
+        public void DisplayAccountInfo()
+        {
+            Console.WriteLine($"Account number = {AccountNumber}");
+            Console.WriteLine($"Account name = {AccountHolder}");
+            Console.WriteLine($"Account balance = {Balance}\n");
+        }
 
+    }
 
     class Program
     {
@@ -51,21 +57,24 @@ namespace LabSheet3Q3
             BankAccount numerouno = new BankAccount(0897654, "Johnny Poorboy", 3.50M);
             BankAccount numeroduo = new BankAccount(0567889, "Victor Creosote", 199999.99M);
 
-            Console.WriteLine(numerouno);
-            Console.WriteLine(numeroduo);
+            Console.WriteLine(numerouno + "\n");
+            Console.WriteLine(numeroduo + "\n");
 
 
 
-            Console.WriteLine("Please choose an amount to deposit in 1st account:  ");
+            Console.Write("Please choose an amount to deposit in 1st account:  ");
             numerouno.Deposit(decimal.Parse(Console.ReadLine()));
 
-            Console.WriteLine(numerouno);
-            Console.WriteLine();
-            Console.WriteLine("Please choose an amount to withdraw from the second account:  ");
+            Console.WriteLine(numerouno +"\n");
+            
+            Console.Write("Please choose an amount to withdraw from the second account:  ");
             numeroduo.Withdraw(decimal.Parse(Console.ReadLine()));
-            Console.WriteLine();
-            Console.WriteLine(numeroduo);
+            
+            Console.WriteLine(numeroduo + "\n");
 
+            numerouno.DisplayAccountInfo();
+
+            numeroduo.DisplayAccountInfo();
         }
     }
 }
