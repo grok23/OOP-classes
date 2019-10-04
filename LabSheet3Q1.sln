@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCashRegister2", "TestCa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchDemo", "LunchDemo\LunchDemo.csproj", "{5D0C56DF-0754-44E7-849F-0851CC62576A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolsDemo", "SchoolsDemo\SchoolsDemo.csproj", "{04A8A1D9-4902-4B88-9A25-1375D02B9FD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5D0C56DF-0754-44E7-849F-0851CC62576A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D0C56DF-0754-44E7-849F-0851CC62576A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D0C56DF-0754-44E7-849F-0851CC62576A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A8A1D9-4902-4B88-9A25-1375D02B9FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A8A1D9-4902-4B88-9A25-1375D02B9FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A8A1D9-4902-4B88-9A25-1375D02B9FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A8A1D9-4902-4B88-9A25-1375D02B9FD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
