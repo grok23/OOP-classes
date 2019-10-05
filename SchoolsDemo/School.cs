@@ -14,19 +14,18 @@ namespace SchoolsDemo
 
         public int CompareTo(School other)
         {
-            // Alphabetic sort if StudentCount is equal. [A to Z]
+            //if Sorts alphabetically if StudentCount is equal (a to z)
             if (this.StudentCount == other.StudentCount)
             {
                 return this.Name.CompareTo(other.Name);
             }
-            // Default to StudentCount sort. [High to low]
-            return other.StudentCount.CompareTo(this.StudentCount);
+            //Default to StudentCount sort. (Low to High)
+            return this.StudentCount.CompareTo(other.StudentCount);
         }
 
         public override string ToString()
         {
-            // String representation.
-            return this.StudentCount.ToString() + "," + this.Name;
+            return this.StudentCount.ToString() + ", " + this.Name;
         }
     }
 }
